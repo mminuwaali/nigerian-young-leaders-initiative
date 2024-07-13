@@ -1,0 +1,39 @@
+{% extends 'landing.html' %}
+
+{% block content %}
+<section class="w-full min-h-96 relative aspect-4 from-rose-800 to-rose-900 bg-gradient-to-t flex flex-col items-center justify-center text-white capitalize">
+  {% comment %} <img src="" alt="" class="w-full h-full object-cover absolute brightness-50" /> {% endcomment %}
+  <h2 class="text-2xl md:text-7xl font-bold z-10">{{category.name}}</h2>
+</section>
+
+
+  <section class="w-full flex flex-col items-center gap-10 mt-10">
+    <div class="w-full flex flex-col items-center">
+      <h2 class="font-bold text-3xl text-center capitalize">explore more content</h2>
+      <p class="text-sm text-slate w-2/3 text-center">
+        Browse through under {{category.name}} category
+      </p>
+    </div>
+    <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(16rem,1fr))] px-[7%] justify-center content-center items-center">
+      <!-- blog post card -->
+      {% for blog in blogs %}
+        {% include 'cards/blog.html' with blog=blog %}
+      {% endfor %}
+    </div>
+
+    <!-- Pagination -->
+    <div class="mx-auto">
+      {% if blogs.has_previous %}
+        <a href="?page=1" class="text-rose-500">&laquo; First</a>
+        <a href="?page={{ blogs.previous_page_number }}" class="text-rose-500">&lsaquo; Previous</a>
+      {% endif %}
+
+      <span class="mx-2">Page {{ blogs.number }} of {{ blogs.paginator.num_pages }}</span>
+
+      {% if blogs.has_next %}
+        <a href="?page={{ blogs.next_page_number }}" class="text-rose-500">Next &rsaquo;</a>
+        <a href="?page={{ blogs.paginator.num_pages }}" class="text-rose-500">Last &raquo;</a>
+      {% endif %}
+    </div>
+  </section>
+{% endblock %}

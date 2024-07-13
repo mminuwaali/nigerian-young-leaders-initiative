@@ -1,0 +1,26 @@
+{% extends 'landing.html' %}
+
+{% block content %}
+  <section class="flex flex-col gap-10 pt-10 pb-20 px-[10%]">
+    <div class="w-full flex flex-col items-center gap-2">
+      <h2 class="text-2xl font-semibold">Our Team Members</h2>
+      <span class="text-sm">We love what we do and we do it with passion.</span>
+    </div>
+
+    <div class="w-full grid gap-8 gap-y-24 grid-cols-[repeat(auto-fill,minmax(14rem,1fr))]">
+      {% for team in teams %}
+        <div class="aspect-[0.8] bg-gray-400 rounded-md relative flex items-end justify-center">
+          <img src="{{ team.image.url }}" alt="" loading="lazy" class="absolute w-full h-full object-cover rounded-md" />
+          <div class="flex flex-col items-center justify-center absolute shadow-md gap-4 p-4 px-2 bg-white w-5/6 border-t-[6px] border-blue-600 translate-y-1/2 capitalize z-10">
+            <h3 class="leading-4 text-sm text-center font-semibold">{{ team.user.get_full_name }}</h3>
+            <h4 class="leading-4 text-xs text-center font-semibold">{{ team.position }}</h4>
+            <span class="text-xs text-left leading-3">{{ team.about }}</span>
+            <a href="{% url 'landing:team-detail-view' team.id %}" class="mt-auto pt-2 text-rose-600 text-xs uppercase px-4 py-1 pl-0">read more</a>
+          </div>
+        </div>
+        {% empty %}
+        <h2 class="text-center absolute left-1/2 capitalize text-lg md:text-4xl mt-20 text-slate-400 -translate-x-1/2">no team member</h2>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

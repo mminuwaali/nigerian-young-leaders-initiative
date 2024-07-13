@@ -1,0 +1,19 @@
+{% load heroicons %}
+
+<footer class="w-full flex flex-col bg-black p-6 text-white gap-3">
+  <div class="w-full flex flex-wrap items-center gap-4">
+    <div class="grow flex flex-wrap items-center justify-center gap-4 text-xs md:text-sm" style="font-variant: small-caps;">
+      <a href="{% url 'landing:about-view' %}" class="relative">about</a>
+      <a href="{% url 'program:index-view' %}" class="relative">programs</a>
+      <a href="{% url 'landing:student-view' %}" class="relative">students</a>
+      <a href="{% url 'landing:donate-view' %}" class="relative">donate</a>
+      <a href="{% url 'landing:team-view' %}" class="relative">team</a>
+      <a href="{% url 'landing:apply-view' %}" class="relative">apply</a>
+      <a href="{% url 'landing:contact-view' %}" class="relative">contact</a>
+      <a href="{% url 'blogging:index-view' %}" class="relative">blog</a>
+    </div>
+  </div>
+
+  <div class="w-full flex items-center justify-center gap-4"></div>
+  <p class="text-xs md:text-sm text-center">copyright &copy; 2024, All rights reserved</p>
+</footer>

@@ -1,0 +1,28 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% tailwind_css %}
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block head %}
+
+    {% endblock %}
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen w-screen items-center overflow-x-hidden">
+    {% include 'landing/components/header.html' %}
+
+    <main class="grow shrink-0 flex flex-col w-full gap-4 pb-4">
+      {% block content %}
+
+      {% endblock %}
+    </main>
+
+    {% include 'landing/components/footer.html' %}
+    {% include 'components/error.html' %}
+  </body>
+  {% block script %}
+
+  {% endblock %}
+</html>

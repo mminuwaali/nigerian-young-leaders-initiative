@@ -1,0 +1,13 @@
+{% extends 'landing.html' %}
+
+{% block content %}
+  <section class="w-full min-h-60 flex flex-col items-center justify-center aspect-[2.5] mb-20 relative">
+    <img src="{{ program.image.url }}" alt="" class="absolute top-0 left-0 w-full h-full object-contain bg-slate-800" />
+  </section>
+
+  <section class="w-full flex flex-col px-[10%]">
+    <h2 class="text-center text-3xl font-semibold capitalize mb-20">{{ program.title }}</h2>
+
+    <p class="text-justify">{{ program.description }}</p>
+  </section>
+{% endblock %}
