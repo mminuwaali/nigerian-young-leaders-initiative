@@ -1,6 +1,6 @@
 .env/
 media/
-static/
+# static/
 .vscode/
 db.sqlite3
 website/.env
