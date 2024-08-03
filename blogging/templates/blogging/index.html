@@ -1,7 +1,7 @@
 {% extends 'landing.html' %}
 
 {% block content %}
-<section class="w-full min-h-96 relative aspect-4 from-rose-700 to-rose-900 bg-gradient-to-t flex flex-col items-center justify-center text-white capitalize">
+<section class="w-full min-h-96 relative aspect-4 from-orange-600 to-orange-900 bg-gradient-to-t flex flex-col items-center justify-center text-white capitalize">
   {% comment %} <img src="" alt="" class="w-full h-full object-cover absolute brightness-50" /> {% endcomment %}
   <h2 class="text-xl md:text-4xl font-semibold z-10">explore, dive &</h2>
   <h2 class="text-2xl md:text-6xl font-bold z-10">sink in your imagination</h2>
@@ -9,7 +9,7 @@
 
 <section class="w-full text-sm flex items-center justify-start whitespace-nowrap gap-4 overflow-auto px-[10%]">
   {% for category in categories %}
-    <a href="{% url 'blogging:category-detail-view' category.id %}" class="transition-all hover:bg-rose-500 hover:text-white px-4">{{category.name}}</a>
+    <a href="{% url 'blogging:category-detail-view' category.id %}" class="transition-all hover:bg-orange-600 hover:text-white px-4">{{category.name}}</a>
   {% endfor %}
 </section>
 
@@ -30,15 +30,15 @@
     <!-- Pagination -->
     <div class="mx-auto">
       {% if blogs.has_previous %}
-        <a href="?page=1" class="text-rose-500">&laquo; First</a>
-        <a href="?page={{ blogs.previous_page_number }}" class="text-rose-500">&lsaquo; Previous</a>
+        <a href="?page=1" class="text-orange-600">&laquo; First</a>
+        <a href="?page={{ blogs.previous_page_number }}" class="text-orange-600">&lsaquo; Previous</a>
       {% endif %}
 
       <span class="mx-2">Page {{ blogs.number }} of {{ blogs.paginator.num_pages }}</span>
 
       {% if blogs.has_next %}
-        <a href="?page={{ blogs.next_page_number }}" class="text-rose-500">Next &rsaquo;</a>
-        <a href="?page={{ blogs.paginator.num_pages }}" class="text-rose-500">Last &raquo;</a>
+        <a href="?page={{ blogs.next_page_number }}" class="text-orange-600">Next &rsaquo;</a>
+        <a href="?page={{ blogs.paginator.num_pages }}" class="text-orange-600">Last &raquo;</a>
       {% endif %}
     </div>
   </section>

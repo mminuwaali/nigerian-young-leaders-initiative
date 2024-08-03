@@ -14,9 +14,9 @@
   <section class="w-full flex flex-col gap-10 my-10 px-[6%]">
     <div class="w-full flex flex-col items-center justify-center"></div>
 
-    <div class="w-full gap-5 flex flex-wrap items-center justify-center text-rose-400 text-lg md:text-2xl font-semibold capitalize underline">
+    <div class="w-full gap-5 flex flex-wrap items-center justify-center text-orange-400 text-lg md:text-2xl font-semibold capitalize underline">
       {% for category in categories %}
-        <a href="#" class="transition-all hover:text-rose-600">{{ category.name }}</a>
+        <a href="#" class="transition-all hover:text-orange-600">{{ category.name }}</a>
       {% endfor %}
     </div>
   </section>
@@ -26,19 +26,19 @@
       <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.23 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
 
       <div class="basis-96 grow flex flex-col items-start justify-start gap-6 p-[5%]">
-        <h2 class="capitalize self-center md:self-start text-2xl md:text-4xl">our mission</h2>
-        <p class="font-thin text-lg">Our mission is to empower young pursue something that you want to happen.</p>
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">our mission</h2>
+        <p class="font-thin text-xl">Our mission is to empower young pursue something that you want to happen.</p>
 
-        <a href="{% url 'landing:about-view' %}" class="mt-auto px-6 py-2 text-white bg-red-700 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-red-700">read more</a>
+        <a href="{% url 'landing:about-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">read more</a>
       </div>
     </div>
 
     <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
       <div class="basis-96 grow flex order-1 md:order-none flex-col items-start justify-start gap-6 p-[5%]">
-        <h2 class="capitalize self-center md:self-start text-2xl md:text-4xl">our programs</h2>
-        <p class="font-thin text-lg">To accelerate Guinea's socio-economic and environmental development, we offer a diverse range of educational programs to the country's most talented youths.</p>
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">our programs</h2>
+        <p class="font-thin text-xl">To accelerate Guinea's socio-economic and environmental development, we offer a diverse range of educational programs to the country's most talented youths.</p>
 
-        <a href="{% url 'program:index-view' %}" class="mt-auto px-6 py-2 text-white bg-red-700 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-red-700">explore</a>
+        <a href="{% url 'program:index-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">explore</a>
       </div>
 
       <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.26 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
@@ -48,19 +48,19 @@
       <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.24 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
 
       <div class="basis-96 grow flex flex-col items-start justify-start gap-6 p-[5%]">
-        <h2 class="capitalize self-center md:self-start text-2xl md:text-4xl">support us</h2>
-        <p class="font-thin text-lg">Whether it is by sponsoring our students, partnering with us, or volunteering at one of our programs, there are many ways you can help us achieve our mission.</p>
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">support us</h2>
+        <p class="font-thin text-xl">Whether it is by sponsoring our students, partnering with us, or volunteering at one of our programs, there are many ways you can help us achieve our mission.</p>
 
-        <a href="{% url 'landing:contact-view' %}" class="mt-auto px-6 py-2 text-white bg-red-700 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-red-700">learn more</a>
+        <a href="{% url 'landing:contact-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">learn more</a>
       </div>
     </div>
 
     <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
       <div class="basis-96 grow order-1 md:order-none flex flex-col items-start justify-start gap-6 p-[5%]">
-        <h2 class="capitalize self-center md:self-start text-2xl md:text-4xl">recent news</h2>
-        <p class="font-thin text-lg">Our organization is rapidly growing, and many things happen here everyday. Take the time to read about the most recent news at Guinean Young Leaders Initiative</p>
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">recent news</h2>
+        <p class="font-thin text-xl">Our organization is rapidly growing, and many things happen here everyday. Take the time to read about the most recent news at Guinean Young Leaders Initiative</p>
 
-        <a href="{% url 'blogging:index-view' %}" class="mt-auto px-6 py-2 text-white bg-red-700 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-red-700">read more</a>
+        <a href="{% url 'blogging:index-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">read more</a>
       </div>
 
       <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
@@ -70,19 +70,19 @@
   <section class="w-full flex flex-col gap-10 my-10 px-[10%]">
     <div class="w-full flex items-center justify-between">
       <div class="flex flex-col gap-1 items-start grow"></div>
-      <button class="px-6 py-1 bg-rose-700 text-white uppercase font-semibold">overview</button>
+      <button class="px-6 py-1 bg-orange-600 text-white uppercase font-semibold">overview</button>
     </div>
 
     <div class="w-full gap-4 grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))]">
-      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-rose-400"></div>
-      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-rose-400"></div>
-      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-rose-400"></div>
-      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-rose-400"></div>
-      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-rose-400"></div>
+      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-orange-400"></div>
+      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-orange-400"></div>
+      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-orange-400"></div>
+      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-orange-400"></div>
+      <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-orange-400"></div>
     </div>
   </section>
 
-  <section class="w-full flex flex-col items-center justify-center gap-20 p-10 bg-red-700">
+  <section class="w-full flex flex-col items-center justify-center gap-20 p-10 bg-orange-600">
     <h2 class="text-4xl text-white font-bold">2022 in Numbers</h2>
     <div class="w-full grid gap-4 grid-cols-[repeat(auto-fill,minmax(22em,1fr))] px-[10%]">
       <div class="p-8 flex flex-col items-center justify-center gap-2">

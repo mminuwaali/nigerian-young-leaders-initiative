@@ -12,7 +12,7 @@
   </section>
 
   <section class="w-full flex flex-col items-center gap-6 px-[5%] mb-4">
-    <h2 class="text-3xl md:text-5xl capitalize text-center text-red-700 mb-3 leading-tight font-bold">quick facts</h2>
+    <h2 class="text-3xl md:text-5xl capitalize text-center text-orange-600 mb-3 leading-tight font-bold">quick facts</h2>
 
     <div class="w-full gap-5 flex flex-wrap items-center justify-center">
       <div class="flex flex-col items-center justify-center gap-4 p-4 basis-80">
@@ -31,7 +31,7 @@
   </section>
 
   <section class="w-full flex flex-col items-center gap-6 px-[5%]">
-    <h2 class="text-3xl md:text-5xl capitalize text-center text-red-700 mb-3 leading-tight font-bold">meet our students</h2>
+    <h2 class="text-3xl md:text-5xl capitalize text-center text-orange-600 mb-3 leading-tight font-bold">meet our students</h2>
 
     <p class="text-sm md:text-base my-4 text-center w-full md:w-5/6">Our students are smart. They purpose driven and change makers. They are courageous and are representative of Nigerian Young Leaders Initiative's socio-cultural diversity. Take the time to meet some of them below.</p>
 
@@ -39,7 +39,7 @@
       {% for student in students %}
         <div class="aspect-[0.7] bg-gray-400 rounded-md relative flex items-end justify-center">
           <img src="{{ student.image.url }}" alt="" loading="lazy" class="absolute w-full h-full object-cover rounded-md" />
-          <div class="flex flex-col items-center justify-center absolute shadow-md gap-4 p-4 px-2 bg-white w-5/6 border-2 border-rose-800 translate-y-1/2 capitalize z-10">
+          <div class="flex flex-col items-center justify-center absolute shadow-md gap-4 p-4 px-2 bg-white w-5/6 border-2 border-orange-800 translate-y-1/2 capitalize z-10">
             <h3 class="leading-4 text-sm text-center font-semibold">{{ student.name }}</h3>
             <h4 class="leading-4 text-xs text-center font-semibold">{{ student.program }}</h4>
           </div>
