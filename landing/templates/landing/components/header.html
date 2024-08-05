@@ -1,22 +1,22 @@
 {% load static heroicons %}
 
-<header class="top-0 w-full z-50 sticky gap-10 flex items-center justify-between bg-orange-600 text-white p-2 px-[8%]">
+<header class="top-0 w-full z-50 sticky gap-10 flex items-center justify-between bg-orange-600 text-white p-2 px-[10%]">
   <a href="{% url 'landing:index-view' %}" class="text-3xl font-bold capitalize">
     <img src="{% static 'logo.png' %}" alt="" class="h-20"/>
   </a>
 
-  <nav class="py-10 md:py-0 grow fixed md:relative w-0 md:w-full h-full top-[4.5rem] md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto bg-black bg-opacity-70 md:bg-transparent backdrop-blur-md flex flex-col md:flex-row items-center justify-start md:justify-end gap-6 md:gap-4 capitalize text-sm text-center overflow-hidden transition-all" id="header-navbar">
-    <a href="{% url 'landing:about-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">about</a>
-    <a href="{% url 'program:index-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">programs</a>
-    <a href="{% url 'landing:student-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">students</a>
-    <a href="{% url 'landing:donate-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">donate</a>
-    <a href="{% url 'landing:team-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">team</a>
-    <a href="{% url 'landing:apply-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">apply</a>
-    <a href="{% url 'landing:contact-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">contact</a>
-    <a href="{% url 'blogging:index-view' %}" class="relative border-t border-t-current px-2 pt-1 w-20 transition-all hover:text-yellow-300">blog</a>
+  <nav class="py-10 md:py-0 grow fixed md:relative w-0 md:w-full top-28 md:top-auto right-6 md:right-auto bg-black bg-opacity-50 md:bg-transparent rounded-md md:rounded-none backdrop-blur-md flex flex-col md:flex-row items-center justify-start md:justify-end gap-6 md:gap-8 capitalize text-sm text-center overflow-hidden transition-all" id="header-navbar">
+    <a href="{% url 'landing:about-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">about</a>
+    <a href="{% url 'program:index-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">programs</a>
+    <a href="{% url 'landing:student-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">students</a>
+    <a href="{% url 'landing:donate-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">donate</a>
+    <a href="{% url 'landing:team-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">team</a>
+    <a href="{% url 'landing:apply-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">apply</a>
+    <a href="{% url 'landing:contact-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">contact</a>
+    <a href="{% url 'blogging:index-view' %}" class="relative border-t border-t-current pt-1 w-1/2 md:w-24 transition-all hover:text-yellow-300">blog</a>
   </nav>
 
-  <div class="h-6 w-6 flex md:hidden cursor-pointer" onclick="document.querySelector('#header-navbar').classList.toggle('w-52')">
+  <div class="h-6 w-6 flex md:hidden cursor-pointer" onclick="document.querySelector('#header-navbar').classList.toggle('w-72')">
     {% heroicon_outline 'bars-2' %}
   </div>
 </header>

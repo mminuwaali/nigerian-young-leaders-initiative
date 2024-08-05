@@ -1,33 +1,41 @@
 {% extends 'landing.html' %}
 
 {% block content %}
-  <section class="w-full min-h-60 flex flex-col items-center justify-center aspect-[2.5] mb-20 relative bg-black">
-    <img src="" alt="" class="absolute top-0 left-0 w-full h-full object-cover" />
+<section class="w-full min-h-60 flex flex-col items-center justify-center aspect-[2.5] mb-20 relative bg-black">
+  <img src="" alt="" class="absolute top-0 left-0 w-full h-full object-cover" />
 
-    <div class="flex flex-col gap-5 text-white items-center justify-center">
-      <h2 class="text-3xl md:text-6xl capitalize">our programs</h2>
-    </div>
+  <div class="flex flex-col gap-5 text-white items-center justify-center">
+    <h2 class="text-3xl md:text-6xl capitalize">our programs</h2>
+  </div>
 
-    <div class="absolute bottom-0 translate-y-1/2 p-4 bg-orange-600 bg-opacity-90 w-4/6 rounded">
-      <p class="text-sm text-white text-center">
-        {% lorem 40 w %}
-      </p>
-    </div>
-  </section>
+  <div class="absolute bottom-0 translate-y-1/2 p-4 bg-orange-600 bg-opacity-90 w-4/6 rounded">
+    <p class="text-sm text-white text-center">
+      Nigerian Young Leaders Initiative seeks to accelerate Guinea's socio-economic and environmental development by
+      providing the most innovative entrepreneurial and ethical leadership education to the country's most talented
+      youths. Achieving this mission requires creating a wide-variety of programs that meet the needs of our students
+      and addresses Guinea's most pressing issues. Take the time to explore our current and aspirational programs below.
+    </p>
+  </div>
+</section>
 
-  <section class="w-full flex flex-col items-center gap-6 px-[5%]">
-    <h2 class="text-3xl md:text-5xl capitalize text-center text-orange-600 mb-3 leading-tight font-bold">current programs</h2>
-    <div class="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(22rem,1fr))]">
-      {% for program in programs %}
-        <div class="flex flex-wrap gap-6 shadow-sm">
-          <img src="{{ program.image.url }}" alt="" class="object-contain aspect-2 basis-40 grow" />
-          <div class="flex flex-col gap-4 p-4 justify-between items-start basis-60 grow">
-            <h2 class="capitalize font-semibold text-orange-900">{{ program.title }}</h2>
-            <p class="text-sm">{{ program.summary }}</p>
-            <a href="{% url 'program:detail-view' program.id %}" class="px-6 py-1 border border-orange-900 bg-orange-900 text-white flex-none text-sm transition-all hover:text-orange-900 hover:bg-white" style="font-variant: small-caps;">learn more</a>
-          </div>
-        </div>
-      {% endfor %}
+<section class="w-full flex flex-col items-center gap-6 px-[5%]">
+  <h2 class="text-3xl md:text-5xl capitalize text-center text-orange-600 mb-3 leading-tight font-bold">current programs
+  </h2>
+  <div class="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(22rem,1fr))] pb-14">
+    {% for program in programs %}
+    <div class="flex flex-wrap gap-6 shadow-sm">
+      <img src="{{ program.image.url }}" alt="" class="object-contain aspect-2 basis-40 grow" />
+      <div class="flex flex-col gap-4 p-4 justify-between items-start basis-60 grow">
+        <h2 class="capitalize font-semibold text-orange-900">{{ program.title }}</h2>
+        <p class="text-sm">{{ program.summary }}</p>
+        <a href="{% url 'program:detail-view' program.id %}"
+          class="px-6 py-1 border border-orange-900 bg-orange-900 text-white flex-none text-sm transition-all hover:text-orange-900 hover:bg-white"
+          style="font-variant: small-caps;">learn more</a>
+      </div>
     </div>
-  </section>
+    {% empty %}
+    <h2 class="text-center absolute left-1/2 capitalize text-lg md:text-4xl text-slate-400 -translate-x-1/2">no programs</h2>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}

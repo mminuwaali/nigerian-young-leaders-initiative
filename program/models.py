@@ -3,6 +3,7 @@ from django.db import models
 from markdownx.utils import markdownify
 from markdownx.models import MarkdownxField
 
+
 class Category(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -31,3 +32,7 @@ class Program(models.Model):
 
     def __str__(self):
         return self.title.title()
+
+
+class Application(models.Model):
+    program = models.ForeignKey(Program, models.PROTECT)

@@ -2,14 +2,22 @@ from . import models
 from account.models import Team
 from django.contrib import messages
 from account.forms import ContactForm
-from program.models import Program,Category
+from program.models import Program, Category
 from django.shortcuts import render, redirect
 
 
 def index_view(request):
+    teams = Team.objects.all()
+    programs = Program.objects.all()
     categories = Category.objects.all()
+    students = models.Student.objects.all()
 
-    context = {"categories":categories}
+    context = {
+        "teams": teams,
+        "programs": programs,
+        "students": students,
+        "categories": categories,
+    }
     return render(request, "landing/index.html", context)
 
 

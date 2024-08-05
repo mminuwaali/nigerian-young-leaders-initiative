@@ -1,31 +1,44 @@
 {% extends 'landing.html' %}
 
 {% block content %}
-  <section class="w-full bg-orange-900 brightness-75 text-white font-bold flex items-center justify-center aspect-[3.5] min-h-80">
-    <h1 class="capitalize text-3xl md:text-6xl">how to apply</h1>
-  </section>
+<section
+  class="w-full bg-orange-900 brightness-75 text-white font-bold flex items-center justify-center aspect-[3.5] min-h-80">
+  <h1 class="capitalize text-3xl md:text-6xl">how to apply</h1>
+</section>
 
-  <section class="w-full flex flex-col gap-10 items-center px-[10%]">
-    <p class="text-sm md:text-base my-4 text-center w-full md:w-5/6">
-      We offer a wide variety of programs in ethical leadership education and entrepreneurship in Nigerian Young Leaders Initiative, for the Nigerian Young Leaders Initiativen youths. When our program opens, a link will be available below for you to submit your application. In the meantime, feel free to contact us with any question and explore our <a href="{% url 'program:index-view' %}" class="underline text-orange-600">programs here.</a>
-    </p>
+<section class="w-full flex flex-col gap-10 items-center px-[10%]">
+  <p class="text-sm md:text-base my-4 text-center w-full md:w-5/6">
+    We offer a wide variety of programs in ethical leadership education and entrepreneurship in Nigerian Young Leaders
+    Initiative, for the Nigerian Young Leaders Initiativen youths. When our program opens, a link will be available
+    below for you to submit your application. In the meantime, feel free to contact us with any question and explore our
+    <a href="{% url 'program:index-view' %}" class="underline text-orange-600">programs here.</a>
+  </p>
 
-    <a href="{% url 'landing:contact-view' %}" class="px-6 py-1 bg-orange-900 text-white transition-all border-orange-300 border hover:bg-white hover:text-orange-600" style="font-variant: small-caps;">contact us</a>
-  </section>
+  <a href="{% url 'landing:contact-view' %}"
+    class="px-6 py-1 bg-orange-900 text-white transition-all border-orange-300 border hover:bg-white hover:text-orange-600"
+    style="font-variant: small-caps;">contact us</a>
+</section>
 
-  <section class="w-full flex flex-col items-center gap-6 px-[5%]">
-    <h2 class="text-3xl md:text-5xl capitalize text-center text-orange-600 mb-3 leading-tight font-bold">explore our programs</h2>
-    <div class="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(22rem,1fr))]">
-      {% for program in programs %}
-        <div class="flex flex-wrap gap-6 shadow-sm">
-          <img src="{{ program.image.url }}" alt="" class="object-contain aspect-2 basis-40 grow" />
-          <div class="flex flex-col gap-4 p-4 justify-between items-start basis-60 grow">
-            <h2 class="capitalize font-semibold text-orange-900">{{ program.title }}</h2>
-            <p class="text-sm">{{ program.summary }}</p>
-            <a href="{% url 'program:detail-view' program.id %}" class="px-6 py-1 border border-orange-900 bg-orange-900 text-white flex-none text-sm transition-all hover:text-orange-900 hover:bg-white" style="font-variant: small-caps;">learn more</a>
-          </div>
-        </div>
-      {% endfor %}
+<section class="w-full flex flex-col items-center gap-6 px-[5%]">
+  <h2 class="text-3xl md:text-5xl capitalize text-center text-orange-600 mb-3 leading-tight font-bold">explore our
+    programs</h2>
+  <div class="w-full grid gap-6 grid-cols-[repeat(auto-fit,minmax(22rem,1fr))] pb-14">
+    {% for program in programs %}
+    <div class="flex flex-wrap gap-6 shadow-sm">
+      <img src="{{ program.image.url }}" alt="" class="object-contain aspect-2 basis-40 grow" />
+      <div class="flex flex-col gap-4 p-4 justify-between items-start basis-60 grow">
+        <h2 class="capitalize font-semibold text-orange-900">{{ program.title }}</h2>
+        <p class="text-sm">{{ program.summary }}</p>
+        <a href="{% url 'program:detail-view' program.id %}"
+          class="px-6 py-1 border border-orange-900 bg-orange-900 text-white flex-none text-sm transition-all hover:text-orange-900 hover:bg-white"
+          style="font-variant: small-caps;">learn more</a>
+      </div>
     </div>
-  </section>
+    {% empty %}
+    <h2 class="text-center absolute left-1/2 capitalize text-lg md:text-4xl text-slate-400 -translate-x-1/2">
+      no application at the moment
+    </h2>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}

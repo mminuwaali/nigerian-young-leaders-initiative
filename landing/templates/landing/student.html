@@ -6,8 +6,8 @@
     <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt="" class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
 
     <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
-      <h2 class="text-3xl md:text-6xl capitalize">our students</h2>
-      <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur voluptas inventore eos esse. Ex.</p>
+      <h2 class="text-3xl md:text-6xl font-bold capitalize">our students</h2>
+      <p class="">Young | Smart | Purpose Driven | Changemakers | Courageous</p>
     </div>
   </section>
 
@@ -17,15 +17,15 @@
     <div class="w-full gap-5 flex flex-wrap items-center justify-center">
       <div class="flex flex-col items-center justify-center gap-4 p-4 basis-80">
         <span class="text-xl md:text-3xl font-bold text-orange-300">30</span>
-        <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis accusantium autem sapiente illum!</p>
+        <p class="text-sm text-center">Number of young leaders who applied to our 2022 Pilot Program</p>
       </div>
       <div class="flex flex-col items-center justify-center gap-4 p-4 basis-80">
         <span class="text-xl md:text-3xl font-bold text-orange-300">30</span>
-        <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis accusantium autem sapiente illum!</p>
+        <p class="text-sm text-center">We selected 30 out of 85 young leaders to join our Emerging Leaders Camp</p>
       </div>
       <div class="flex flex-col items-center justify-center gap-4 p-4 basis-80">
-        <span class="text-xl md:text-3xl font-bold text-orange-300">30</span>
-        <p class="text-sm text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio reiciendis accusantium autem sapiente illum!</p>
+        <span class="text-xl md:text-3xl font-bold text-orange-300">30%</span>
+        <p class="text-sm text-center">Percentage of girls in our first Emerging Leaders Camp. Our goal is to reach 50% of girls  in 2023</p>
       </div>
     </div>
   </section>
@@ -35,7 +35,7 @@
 
     <p class="text-sm md:text-base my-4 text-center w-full md:w-5/6">Our students are smart. They purpose driven and change makers. They are courageous and are representative of Nigerian Young Leaders Initiative's socio-cultural diversity. Take the time to meet some of them below.</p>
 
-    <div class="w-full grid gap-8 gap-y-24 grid-cols-[repeat(auto-fill,minmax(12rem,1fr))] mb-10 px-[5%]">
+    <div class="w-full grid gap-8 gap-y-24 grid-cols-[repeat(auto-fill,minmax(12rem,1fr))] mb-10 px-[5%] pb-10">
       {% for student in students %}
         <div class="aspect-[0.7] bg-gray-400 rounded-md relative flex items-end justify-center">
           <img src="{{ student.image.url }}" alt="" loading="lazy" class="absolute w-full h-full object-cover rounded-md" />
@@ -44,6 +44,8 @@
             <h4 class="leading-4 text-xs text-center font-semibold">{{ student.program }}</h4>
           </div>
         </div>
+        {% empty %}
+        <h2 class="text-center absolute left-1/2 capitalize text-lg md:text-4xl text-slate-400 -translate-x-1/2">no student yet</h2>
       {% endfor %}
     </div>
   </section>
