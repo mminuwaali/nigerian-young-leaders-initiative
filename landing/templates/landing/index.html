@@ -1,171 +1,115 @@
 {% extends 'landing.html' %} {% load static %} {% block content %}
-<section id="carousel" class="w-full min-h-80 flex justify-start overflow-hidden aspect-[2.5] relative bg-black">
-  <div
-    class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt=""
-      class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
+  <section id="carousel" class="w-full min-h-80 flex justify-start overflow-hidden aspect-[2.5] relative bg-black">
+    <div class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
+      <img src="{% static 'images/banner-1.jpeg' %}" alt="" class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
 
-    <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
-      <h2 class="text-3xl md:text-6xl capitalize text-center">
-        nigerian young leaders initiative
-      </h2>
-      <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
+        <h2 class="text-3xl md:text-6xl capitalize text-center">nigerian young leaders initiative</h2>
+        <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      </div>
     </div>
-  </div>
-  <div
-    class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt=""
-      class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
+    <div class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
+      <img src="{% static 'images/banner-2.jpeg' %}" alt="" class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
 
-    <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
-      <h2 class="text-3xl md:text-6xl capitalize text-center">
-        nigerian young leaders initiative
-      </h2>
-      <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
+        <h2 class="text-3xl md:text-6xl capitalize text-center">nigerian young leaders initiative</h2>
+        <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      </div>
     </div>
-  </div>
-  <div
-    class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt=""
-      class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
+    <div class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
+      <img src="{% static 'images/banner-3.jpeg' %}" alt="" class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
 
-    <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
-      <h2 class="text-3xl md:text-6xl capitalize text-center">
-        nigerian young leaders initiative
-      </h2>
-      <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
+        <h2 class="text-3xl md:text-6xl capitalize text-center">nigerian young leaders initiative</h2>
+        <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      </div>
     </div>
-  </div>
-  <div
-    class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt=""
-      class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
+    <div class="flex-none w-full h-full flex flex-col items-center justify-center gap-4 relative transition-all duration-700 translate-x-[calc(var(--x)*-100vw)]">
+      <img src="{% static 'images/banner-4.jpeg' %}" alt="" class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
 
-    <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
-      <h2 class="text-3xl md:text-6xl capitalize text-center">
-        nigerian young leaders initiative
-      </h2>
-      <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      <div class="flex flex-col gap-5 text-white items-center justify-center z-10">
+        <h2 class="text-3xl md:text-6xl capitalize text-center">nigerian young leaders initiative</h2>
+        <p class="text-center text-sm md:text-base">A Better Society starts with Girls and Women Empowerment</p>
+      </div>
     </div>
-  </div>
 
-  <section
-    class="absolute z-10 flex items-center justify-center gap-4 bg-white bg-opacity-20 rounded-md backdrop-blur-md shadow-md bottom-8 text-xs md:text-base md:bottom-14 p-2 px-6 left-1/2 -translate-x-1/2">
-    <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
-      <input type="radio" checked name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer">
-      <b
-        class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
-    </span>
-    <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
-      <input type="radio" name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer">
-      <b
-        class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
-    </span>
-    <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
-      <input type="radio" name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer">
-      <b
-        class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
-    </span>
-    <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
-      <input type="radio" name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer">
-      <b
-        class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
-    </span>
+    <section class="absolute z-10 flex items-center justify-center gap-4 bg-white bg-opacity-20 rounded-md backdrop-blur-md shadow-md bottom-8 text-xs md:text-base md:bottom-14 p-2 px-6 left-1/2 -translate-x-1/2">
+      <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
+        <input type="radio" checked name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer" />
+        <b class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
+      </span>
+      <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
+        <input type="radio" name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer" />
+        <b class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
+      </span>
+      <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
+        <input type="radio" name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer" />
+        <b class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
+      </span>
+      <span class="aspect-1 h-3 md:h-4 shadow-inner bg-gray-400 rounded-full relative flex items-center justify-center">
+        <input type="radio" name="carousel" class="w-full h-full m-0 p-0 opacity-0 peer" />
+        <b class="absolute inset-1 rounded-full pointer-events-none bg-orange-800 transition-all scale-0 duration-1000 peer-checked:scale-100"></b>
+      </span>
+    </section>
   </section>
-</section>
 
-<section class="w-full flex flex-col gap-10 my-10 px-[6%]">
-  <div class="w-full flex flex-col items-center justify-center"></div>
+  <section class="w-full flex flex-col gap-10 my-10 px-[6%]">
+    <div class="w-full flex flex-col items-center justify-center"></div>
 
-  <div
-    class="w-full gap-5 flex flex-wrap items-center justify-center text-orange-400 text-lg md:text-2xl font-semibold capitalize underline">
-    {% for category in categories %}
-    <a href="#" class="transition-all hover:text-orange-600">{{ category.name }}</a>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="w-full flex flex-col gap-6 px-[10%] gap-4">
-  <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.23 PM.jpeg' %}" alt="image"
-      class="w-full bg-slate-200 rounded-md" />
-
-    <div class="basis-96 grow flex flex-col items-start justify-start gap-6 p-[5%]">
-      <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">
-        our mission
-      </h2>
-      <p class="font-thin text-xl">
-        Our mission is to empower young pursue something that you want to
-        happen.
-      </p>
-
-      <a href="{% url 'landing:about-view' %}"
-        class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">read
-        more</a>
+    <div class="w-full gap-5 flex flex-wrap items-center justify-center text-orange-400 text-lg md:text-2xl font-semibold capitalize underline">
+      {% for category in categories %}
+        <a href="#" class="transition-all hover:text-orange-600">{{ category.name }}</a>
+      {% endfor %}
     </div>
-  </div>
+  </section>
 
-  <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
-    <div class="basis-96 grow flex order-1 md:order-none flex-col items-start justify-start gap-6 p-[5%]">
-      <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">
-        our programs
-      </h2>
-      <p class="font-thin text-xl">
-        To accelerate Guinea's socio-economic and environmental development, we
-        offer a diverse range of educational programs to the country's most
-        talented youths.
-      </p>
+  <section class="w-full flex flex-col gap-6 px-[10%] gap-4">
+    <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
+      <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.23 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
 
-      <a href="{% url 'program:index-view' %}"
-        class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">explore</a>
+      <div class="basis-96 grow flex flex-col items-start justify-start gap-6 p-[5%]">
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">our mission</h2>
+        <p class="font-thin text-xl">Our mission is to empower young pursue something that you want to happen.</p>
+
+        <a href="{% url 'landing:about-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">read more</a>
+      </div>
     </div>
 
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.26 PM.jpeg' %}" alt="image"
-      class="w-full bg-slate-200 rounded-md" />
-  </div>
+    <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
+      <div class="basis-96 grow flex order-1 md:order-none flex-col items-start justify-start gap-6 p-[5%]">
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">our programs</h2>
+        <p class="font-thin text-xl">To accelerate Guinea's socio-economic and environmental development, we offer a diverse range of educational programs to the country's most talented youths.</p>
 
-  <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.24 PM.jpeg' %}" alt="image"
-      class="w-full bg-slate-200 rounded-md" />
+        <a href="{% url 'program:index-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">explore</a>
+      </div>
 
-    <div class="basis-96 grow flex flex-col items-start justify-start gap-6 p-[5%]">
-      <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">
-        support us
-      </h2>
-      <p class="font-thin text-xl">
-        Whether it is by sponsoring our students, partnering with us, or
-        volunteering at one of our programs, there are many ways you can help us
-        achieve our mission.
-      </p>
-
-      <a href="{% url 'landing:contact-view' %}"
-        class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">learn
-        more</a>
-    </div>
-  </div>
-
-  <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
-    <div class="basis-96 grow order-1 md:order-none flex flex-col items-start justify-start gap-6 p-[5%]">
-      <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">
-        recent news
-      </h2>
-      <p class="font-thin text-xl">
-        Our organization is rapidly growing, and many things happen here
-        everyday. Take the time to read about the most recent news at Guinean
-        Young Leaders Initiative
-      </p>
-
-      <a href="{% url 'blogging:index-view' %}"
-        class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">read
-        more</a>
+      <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.26 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
     </div>
 
-    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt="image"
-      class="w-full bg-slate-200 rounded-md" />
-  </div>
-</section>
+    <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
+      <img src="{% static 'images/support.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
 
-<!-- <section class="w-full flex flex-col gap-10 my-10 px-[10%]">
+      <div class="basis-96 grow flex flex-col items-start justify-start gap-6 p-[5%]">
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">support us</h2>
+        <p class="font-thin text-xl">Whether it is by sponsoring our students, partnering with us, or volunteering at one of our programs, there are many ways you can help us achieve our mission.</p>
+
+        <a href="{% url 'landing:contact-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">learn more</a>
+      </div>
+    </div>
+
+    <div class="w-full grid gap-4 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))]">
+      <div class="basis-96 grow order-1 md:order-none flex flex-col items-start justify-start gap-6 p-[5%]">
+        <h2 class="capitalize self-center md:self-start text-2xl md:text-5xl text-green-600">recent news</h2>
+        <p class="font-thin text-xl">Our organization is rapidly growing, and many things happen here everyday. Take the time to read about the most recent news at Guinean Young Leaders Initiative</p>
+
+        <a href="{% url 'blogging:index-view' %}" class="mt-auto px-6 py-2 text-white bg-orange-600 uppercase text-sm shadow-sm transition-all hover:bg-white hover:text-orange-600">read more</a>
+      </div>
+
+      <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt="image" class="w-full bg-slate-200 rounded-md" />
+    </div>
+  </section>
+
+  <!--  <section class="w-full flex flex-col gap-10 my-10 px-[10%]">
   <div class="w-full flex items-center justify-between">
     <div class="flex flex-col gap-1 items-start grow"></div>
     <button class="px-6 py-1 bg-orange-600 text-white uppercase font-semibold">
@@ -185,58 +129,57 @@
     <div class="aspect-1 bg-white shadow-md flex flex-col items-start gap-4 p-4 transition-all hover:bg-orange-400">
     </div>
   </div>
-</section> -->
+</section>  -->
 
-<section class="w-full flex flex-col items-center justify-center gap-20 p-10 md:py-40 relative">
-  <h2 class="text-4xl text-white font-bold z-10">2022 in Numbers</h2>
-  <div class="w-full grid gap-4 z-10 grid-cols-[repeat(auto-fill,minmax(20em,1fr))] md:px-[10%]">
-    <div class="p-8 flex flex-col items-center justify-center gap-2">
-      <span class="text-5xl text-white">{{ students.count }}</span>
-      <b class="text-orange-400 md:text-2xl">Number of Students</b>
+  <section class="w-full flex flex-col items-center justify-center gap-20 p-10 md:py-40 relative">
+    <h2 class="text-4xl text-white font-bold z-10">2022 in Numbers</h2>
+    <div class="w-full grid gap-4 z-10 grid-cols-[repeat(auto-fill,minmax(20em,1fr))] md:px-[10%]">
+      <div class="p-8 flex flex-col items-center justify-center gap-2">
+        <span class="text-5xl text-white">{{ students.count }}</span>
+        <b class="text-orange-400 md:text-2xl">Number of Students</b>
+      </div>
+      <div class="p-8 flex flex-col items-center justify-center gap-2">
+        <span class="text-5xl text-white">{{ teams.count }}</span>
+        <b class="text-orange-400 md:text-2xl">Teeam Size</b>
+      </div>
+      <div class="p-8 flex flex-col items-center justify-center gap-2">
+        <span class="text-5xl text-white">{{ categories.count }}</span>
+        <b class="text-orange-400 md:text-2xl">Program Categories</b>
+      </div>
+      <div class="p-8 flex flex-col items-center justify-center gap-2">
+        <span class="text-5xl text-white">{{ programs.count }}</span>
+        <b class="text-orange-400 md:text-2xl">Number of Programs</b>
+      </div>
     </div>
-    <div class="p-8 flex flex-col items-center justify-center gap-2">
-      <span class="text-5xl text-white">{{ teams.count }}</span>
-      <b class="text-orange-400 md:text-2xl">Teeam Size</b>
-    </div>
-    <div class="p-8 flex flex-col items-center justify-center gap-2">
-      <span class="text-5xl text-white">{{ categories.count }}</span>
-      <b class="text-orange-400 md:text-2xl">Program Categories</b>
-    </div>
-    <div class="p-8 flex flex-col items-center justify-center gap-2">
-      <span class="text-5xl text-white">{{ programs.count }}</span>
-      <b class="text-orange-400 md:text-2xl">Number of Programs</b>
-    </div>
-  </div>
 
-  <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt=""
-    class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
-</section>
+    <img src="{% static 'images/WhatsApp Image 2024-07-04 at 2.57.28 PM.jpeg' %}" alt="" class="absolute top-0 left-0 w-full h-full object-cover brightness-50" />
+  </section>
 {% endblock %} {% block script %}
-<script>
-  let interval,
-    index = 0;
-  const carousel = document.querySelector("#carousel");
-  const slideshows = document.querySelectorAll("#carousel > div");
-  const radios = document.querySelectorAll("#carousel [name='carousel']");
-
-  radios.forEach((ele, id) => ele.addEventListener("click", () => setAnimation(id)))
-
-  interval = setInterval(() => {
-    index = ++index % slideshows.length;
-    carousel.style.setProperty("--x", index);
-    radios[index].checked = true;
-  }, 4000);
-
-  function setAnimation(id) {
-    index = id;
-    clearInterval(interval);
-    carousel.style.setProperty("--x", index);
-
+  <script>
+    let interval,
+      index = 0
+    const carousel = document.querySelector('#carousel')
+    const slideshows = document.querySelectorAll('#carousel > div')
+    const radios = document.querySelectorAll("#carousel [name='carousel']")
+    
+    radios.forEach((ele, id) => ele.addEventListener('click', () => setAnimation(id)))
+    
     interval = setInterval(() => {
-      index = ++index % slideshows.length;
-      carousel.style.setProperty("--x", index);
-      radios[index].checked = true;
-    }, 4000);
-  }
-</script>
+      index = ++index % slideshows.length
+      carousel.style.setProperty('--x', index)
+      radios[index].checked = true
+    }, 4000)
+    
+    function setAnimation(id) {
+      index = id
+      clearInterval(interval)
+      carousel.style.setProperty('--x', index)
+    
+      interval = setInterval(() => {
+        index = ++index % slideshows.length
+        carousel.style.setProperty('--x', index)
+        radios[index].checked = true
+      }, 4000)
+    }
+  </script>
 {% endblock %}
